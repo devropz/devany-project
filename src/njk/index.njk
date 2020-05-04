@@ -5,21 +5,25 @@
 {% block page_description %}A project about the best band in the world.{% endblock %}
 
 {% block content %}
-
 <div class="container">
   <div class="row">
     <div class="col">
-      <h1>Queen</h1>
       <p>
         <a href="https://en.wikipedia.org/wiki/Queen_(band)">Queen are a British rock band</a> formed in London in 1970. Their classic line-up was Freddie Mercury (lead vocals, piano), Brian May (guitar, vocals), Roger Taylor (drums, vocals) and John Deacon (bass). Their earliest works were influenced by progressive rock, hard rock and heavy metal, but the band gradually ventured into more conventional and radio-friendly works by incorporating further styles, such as arena rock and pop rock.
       </p>
       
-      
       {% for member in queen.members %}
-        <img src="img/members/{{ members.image }}">
-        <h3 class="member-headline"><a href="{{member.slug}}.html"> {{member.name}}</a></h3>
-        <p class="member-instruments">{{member.tenure}}</p>
-        <hr>
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="member-headline"><a href="{{member.slug}}.html"> {{member.name}}</a></h2>
+            <p class="lead">{{member.tenure}}</p>
+          </div>
+          <div class="col-md-5">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+          </div>
+        </div>
       {% endfor%}
 
     </div>
