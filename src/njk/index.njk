@@ -5,6 +5,7 @@
 {% block page_description %}A project about the best band in the world.{% endblock %}
 
 {% block content %}
+
 <div class="container">
   <div class="row">
     <div class="col">
@@ -12,9 +13,10 @@
       <p>
         <a href="https://en.wikipedia.org/wiki/Queen_(band)">Queen are a British rock band</a> formed in London in 1970. Their classic line-up was Freddie Mercury (lead vocals, piano), Brian May (guitar, vocals), Roger Taylor (drums, vocals) and John Deacon (bass). Their earliest works were influenced by progressive rock, hard rock and heavy metal, but the band gradually ventured into more conventional and radio-friendly works by incorporating further styles, such as arena rock and pop rock.
       </p>
-      <p>Will leave  <a href="detail-book-shipping-news.html">this</a> here for reference.</p>
+      
       
       {% for member in queen.members %}
+        <img src="img/members/{{ members.image }}">
         <h3 class="member-headline"><a href="{{member.slug}}.html"> {{member.name}}</a></h3>
         <p class="member-instruments">{{member.tenure}}</p>
         <hr>
