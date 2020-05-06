@@ -20,3 +20,27 @@
 
 // Import partials
 @import "nav";
+@import "detail-entry";
+
+.jumbotron {
+  margin-bottom: 0px;
+  background: url(../img/queen-band-wallpaper.jpg) no-repeat center;
+  background-size: cover;
+  color: white;
+  padding-top: 31rem;
+}
+.carousel-item {
+  padding-bottom: 1rem;
+}
+.row-featurette {
+  display: flex;
+}
+.bandSummary {
+  font-family: 'DM Sans';
+}
+.member-headline {
+  font-family: 'Cinzel';
+}
+.lead {
+  font-family: 'DM Sans';
+}

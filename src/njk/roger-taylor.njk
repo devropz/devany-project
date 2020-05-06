@@ -2,12 +2,15 @@
 
 {% set members = queen.members[2] %}
 
-{% block page_title %}Brian May{% endblock %}
+{% block page_title %}Queen | Roger Taylor{% endblock %}
 
 {% block description %}Blog entry description.{% endblock %}
 
 {% block info %}
   <img src="img/members/{{ members.image }}" class="img-fluid">
+
+  <hr>
+  
   <p class="birthplace">{{members.birthplace}}<br>
   <span>{{members.birthdate}}</span></p>
 {% endblock %}
