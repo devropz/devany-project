@@ -29,18 +29,25 @@
   color: white;
   padding-top: 31rem;
 }
-.carousel-item {
+.bandImage {
   padding-bottom: 1rem;
 }
-.row-featurette {
-  display: flex;
-}
+
 .bandSummary {
   font-family: 'DM Sans';
+  text-align: justify;
+  padding-bottom: 3rem;
 }
-.member-headline {
+.member-name {
   font-family: 'Cinzel';
 }
-.lead {
+.tenure {
   font-family: 'DM Sans';
+}
+h4 {
+  font-family: 'DM Sans';
+}
+.text-muted {
+  font-family: 'DM Sans';
+  font-style: italic;
 }
