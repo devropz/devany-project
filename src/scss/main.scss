@@ -43,16 +43,18 @@
   font-family: 'Cinzel';
   color: crimson;
 }
-.tenure {
+.tenure, h4, tbody {
   font-family: 'DM Sans';
 }
-h4 {
-  font-family: 'DM Sans';
-}
+
 .text-muted {
   font-family: 'DM Sans';
   font-style: italic;
 }
-a, thead {
+a {
+  color: crimson;
+}
+thead {
+  font-family: 'Cinzel';
   color: crimson;
 }
