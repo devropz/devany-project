@@ -4,7 +4,6 @@
 
 {% block page_title %}Queen | John Deacon{% endblock %}
 
-{% block description %}Blog entry description.{% endblock %}
 
 {% block info %}
   <img src="img/members/{{ members.image }}" class="img-fluid">
@@ -20,6 +19,6 @@
 {% block story %}
   <h1>{{members.name}}</h1>
   <h5>{{members.instruments}}</h5>
-  <p>{{members.text | safe}}</p>
+  <p class="membertext">{{members.text | safe}}</p>
 {% endblock %}
 

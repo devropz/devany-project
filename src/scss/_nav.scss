@@ -4,12 +4,29 @@
   margin-bottom: 15px;
   background: white;
 }
-.bg-light {
-  background: white;
-}
+
 .nav-link {
   font-family: 'Cinzel';
+  color: darken($color: #000000, $amount: 0);
+}
+a.nav-link:hover {
+  font-weight: 700;
+  color: crimson;
 }
 .dropdown-item {
   font-family: 'DM Sans';
+}
+a.dropdown-item:hover {
+  color: crimson;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: black;
+}
+.navbar-toggler{
+  width: 47px;
+  height: 34px;
+  background-color: white;
+  border-color: crimson;
+  border-width: 2px;
 }

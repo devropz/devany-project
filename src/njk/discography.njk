@@ -1,184 +1,29 @@
 {% extends '_layouts/base.njk' %}
 
-{% set album = queen.discography%}
+{% block page_title %}Discography{% endblock %}
 
 {% block content %}
 
- <div class="album py-5">
-    <div class="container">
 
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="/img/discs/Queen_Queen.png" alt="Album Queen" class="img-fluid">
-            <div class="card-body">
-              <h4>Queen</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">1973</small>
-              </div>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="/img/discs/Queen_Queen_II.jpg" alt="Album Queen" class="img-fluid">
-            <div class="card-body">
-              <h4>Queen II</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">1974</small>
-              </div>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="/img/discs/Queen_Sheer_Heart_Attack.png" alt="Album Sheer Heart Attack" class="img-fluid">
-            <div class="card-body">
-              <h4>Sheer Heart Attack</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">1974</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="/img/discs/Queen_A_Night_at_the_Opera.png" alt="Album A Night at the Opera" class="img-fluid">
-            <div class="card-body">
-              <h4>A Night at the Opera</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">1975</small>
-              </div>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="/img/discs/Queen_A_Day_at_the_Races.jpg" alt="Album A Day at the Races" class="img-fluid">
-            <div class="card-body">
-              <h4>A Day at the Races</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">1976</small>
-              </div>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="/img/discs/Queen_News_of_the_World.png" alt="Album Queen" class="img-fluid">
-            <div class="card-body">
-              <h4>News of the World</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">1977</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
+<div class="album py-5">
+  <div class="container">
+    <div class="row">
+    {% for album in queen.discography %}
       <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="/img/discs/Queen_Jazz.png" alt="Album Jazz" class="img-fluid">
-            <div class="card-body">
-              <h4>Jazz</h4>
+        <div class="card mb-4 shadow-sm">
+          <img src="/img/discs/{{ album.image }}" alt="album image" class="card-img-top">
+          <div class="card-body">
+            <h4>{{album.title}}</h4>
               <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">1978</small>
+                <small class="text-muted">{{album.year}}</small>
               </div>
-            </div>
           </div>
         </div>
-         <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="/img/discs/Queen_The_Game.png" alt="Album The Game" class="img-fluid">
-            <div class="card-body">
-              <h4>The Game</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">1980</small>
-              </div>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="/img/discs/Queen_Flash_Gordon.png" alt="Album Flash Gordon (Original Soundtrack)" class="img-fluid">
-            <div class="card-body">
-              <h4>Flash Gordon (Original Soundtrack)</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">1980</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="/img/discs/Queen_Hot_Space.png" alt="Album Hot Space" class="img-fluid">
-            <div class="card-body">
-              <h4>Hot Space</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">1982</small>
-              </div>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="/img/discs/Queen_The_Works.png" alt="Album The Works" class="img-fluid">
-            <div class="card-body">
-              <h4>The Works</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">1984</small>
-              </div>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="/img/discs/Queen_A_Kind_Of_Magic.png" alt="Album A Kind of Magic" class="img-fluid">
-            <div class="card-body">
-              <h4>A Kind of Magic</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">1986</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="/img/discs/Queen_The_Miracle.png" alt="Album The Miracle" class="img-fluid">
-            <div class="card-body">
-              <h4>The Miracle</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">1989</small>
-              </div>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="/img/discs/Queen_Innuendo.png" alt="Album Innuendo" class="img-fluid">
-            <div class="card-body">
-              <h4>Innuendo</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">1991</small>
-              </div>
-            </div>
-          </div>
-        </div>
-         <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img src="/img/discs/Queen_Made_in_Heaven.jpg" alt="Album Made in Heaven" class="img-fluid">
-            <div class="card-body">
-              <h4>Made in Heaven</h4>
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">1995</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      </div>
+    {% endfor %}
     </div>
   </div>
+</div>               
+
 
 {% endblock %}

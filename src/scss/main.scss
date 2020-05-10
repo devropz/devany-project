@@ -37,9 +37,11 @@
   font-family: 'DM Sans';
   text-align: justify;
   padding-bottom: 3rem;
+  margin: auto;
 }
 .member-name {
   font-family: 'Cinzel';
+  color: crimson;
 }
 .tenure {
   font-family: 'DM Sans';
@@ -50,4 +52,7 @@ h4 {
 .text-muted {
   font-family: 'DM Sans';
   font-style: italic;
+}
+a, thead {
+  color: crimson;
 }
